@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $ENRONMENT = "QA" ]; then
+if [ $ENVIRONMENT = "QA" ]; then
 
    sshpass -p "charan" scp $WORKSPACE/target/CounterWebApp.war charan@172.17.0.2:/home/practice/apache-tomcat-9.0.5/webapps
 
