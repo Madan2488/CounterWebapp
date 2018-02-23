@@ -1,6 +1,7 @@
-RONMENT value comes from jenkins parameter selection
+#!/bin/bash
+#ENVIRONMENT value comes from jenkins parameter selection
 
-if [ $ENRONMENT = "QA" ]; THEN
+if [ $ENRONMENT = "QA" ]; then
 #
 # this deploys the war file into tomcat's webapps directory on Slave1
 
