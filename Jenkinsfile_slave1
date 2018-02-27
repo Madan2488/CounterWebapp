@@ -1,8 +1,4 @@
-peline  {
-  
-  agent any 
-
-    node('Agent_Label') {
+ node('Agent_Label') {
 
 	stages {
 	
@@ -31,6 +27,7 @@ peline  {
 
                 }
         }
+
     }
-  }
+
 }
