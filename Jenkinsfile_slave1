@@ -1,7 +1,5 @@
  node('Agent_Label') {
 
-	stages {
-	
           stage('Checkout') {
 
 		steps {
@@ -27,7 +25,5 @@
 
                 }
         }
-
-    }
 
 }
