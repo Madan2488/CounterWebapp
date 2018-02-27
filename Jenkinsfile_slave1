@@ -1,25 +1,20 @@
  node('Agent_Label') {
 
-          stage('Checkout') {
+   stages {
 
-		steps {
+          stage('Checkout') {
 
 		checkout scm
 
 	 	 }
-	  }
-	stage('Skiping Test') {
 
-		steps {
+	stage('Skiping Test') {
 
 		sh 'mvn install -DskipTests'
 
 		}
-	}
 
 	stage('Install') {
-
-                steps {
 
                 sh 'mvn install'
 
@@ -27,3 +22,4 @@
         }
 
 }
+
