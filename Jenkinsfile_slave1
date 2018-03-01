@@ -2,12 +2,6 @@ pipeline  {
   
 agent {label 'Agent_Label'}
 
-   tools {
-
-	maven 'M2_HOME'
-     
-      }
-
   stages {
 
     stage('Checkout') {
@@ -18,15 +12,7 @@ agent {label 'Agent_Label'}
 
 		}
 	}
-    stage('Skiping Test') {
 
-	steps{
-
-     	sh 'mvn install -DskipTests'
-
-	}
-
-	}
     stage('Install') {
 
 	steps {
