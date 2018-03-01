@@ -1,26 +1,16 @@
-pipeline  {
-  
-agent any
-
-  stages {
+node('Agent_Label') {
 
     stage('Checkout') {
 
-	steps{
-
 	checkout scm
 
-		}
 	}
 
     stage('Install') {
 
-	steps {
-
         sh 'mvn install'
 
-        	}
+ 	}
 
-	}        
-    }
 }
+
