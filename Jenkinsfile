@@ -12,15 +12,7 @@ pipeline  {
 
 	 	 }
 	  }
-	stage('Skiping Test') {
-
-		steps {
-
-		sh 'mvn install -DskipTests'
-
-		}
-	}
-
+	
 	stage('Install') {
 
                 steps {
